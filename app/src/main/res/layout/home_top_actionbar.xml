@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="@android:color/holo_blue_dark"
+              android:gravity="center"
+              android:orientation="horizontal">
+    <LinearLayout android:id="@+id/top_city"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:orientation="horizontal">
+        <TextView
+            android:id="@+id/city_picker"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="北京"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+        <ImageView
+            style="@style/TopImageStyle"
+            android:src="@drawable/arrow_down"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/home_btn_top_search"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:background="@drawable/top_layout_search"
+                  android:clickable="true"
+    >
+<ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:src="@drawable/ic_global_search_results_title"
+/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="搜索商家，店铺和品类"
+        android:textColor="#ccc"
+        android:textSize="12dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/home_top_menu"
+               style="@style/TopImageStyle"
+              android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/menu"/>
+    <ImageView android:id="@+id/home_top_message"
+               style="@style/TopImageStyle"
+             android:layout_marginRight="10dp"
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/message"
+    />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+    <RadioGroup android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:orientation="horizontal">
+        <RadioButton android:id="@+id/home"
+                     style="@style/radio_style"
+                     android:drawableTop="@drawable/home_selector"
+                     android:text="首页"/>
+        <RadioButton android:id="@+id/nearby"
+                     style="@style/radio_style"
+                     android:drawableTop="@drawable/nearby_selector"
+                     android:text="附近"/>
+        <RadioButton android:id="@+id/own"
+                     style="@style/radio_style"
+                     android:drawableTop="@drawable/user_selector"
+                     android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>
